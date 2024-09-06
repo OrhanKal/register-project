@@ -59,7 +59,7 @@ cy.get('[data-cy="submit-button"]').should("not.be.disabled")
     })
     it('submits form on validated inputs', () => {
       //Arrange 
-      //cy.visit('http://localhost:5173')
+      cy.visit('http://localhost:5173')
       //Act
       cy.get('[data-cy="ad-input"]').type("Orhan")
       cy.get('[data-cy="soyad-input"]').type("Kaslın")

@@ -48,7 +48,7 @@ cy.contains(errorMessages.ad)
   describe('Form inputs validated ', () => {
     it('button anabled for validated inputs', () => {
 //Arrange 
-//cy.visit('http://localhost:5173')
+cy.visit('/')
 //Act
 cy.get('[data-cy="ad-input"]').type("Orhan")
 cy.get('[data-cy="soyad-input"]').type("Kaslın")
